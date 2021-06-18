@@ -1,0 +1,22 @@
+{
+  "name": "react-styled-components-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungshun317/react-styled-components-button.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yungshun317/react-styled-components-button/issues"
+  },
+  "homepage": "https://github.com/yungshun317/react-styled-components-button#readme"
+}
