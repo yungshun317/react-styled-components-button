@@ -13,6 +13,11 @@ const StyledButton = styled.button`
     border: 1px solid ${props => props.theme.main};
     background-color: transparent;
 
+    &:hover {
+    	color: white;
+    	background-color: violet;
+    }
+
     /* [1] Attach additional props
     color: ${props => props.primary ? "#4FC0E8" : "#FFFFFF"};
     border: 1px solid ${props => props.primary ? "palevioletred" : "#FFFFFF"};
