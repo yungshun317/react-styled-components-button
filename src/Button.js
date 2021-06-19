@@ -5,7 +5,6 @@ import styled, { ThemeProvider } from "styled-components";
 const StyledButton = styled.button`
     margin: 1rem;
     padding: 0.25rem 1rem;
-    font-size: 1rem;
     border-radius: 3px; 
 
     // [2] Theming
