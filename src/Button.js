@@ -1,6 +1,7 @@
 import React from "react";
 
-import styled, { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider, keyframes } from "styled-components";
+import { bounce } from "react-animations";
 
 const StyledButton = styled.button`
     margin: 1rem;
@@ -31,6 +32,15 @@ const theme = {
 	main: "mediumseagreen"
 }
 
+// [3] react-animations
+const bounceAnimation = keyframes`${bounce}`;
+
+const BounceButton = styled(StyledButton)`
+    &:active, &:focus {
+        animation: 1s ${bounceAnimation};
+    }
+`;
+
 export default function Button() {
     return (
     	<>
@@ -39,6 +49,8 @@ export default function Button() {
             <ThemeProvider theme={theme}>
                 <StyledButton>Themed Button</StyledButton>
             </ThemeProvider>
+
+            <BounceButton>Bouncing Button</BounceButton>
         </>
     );
 }
